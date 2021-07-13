@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 style="font-size: 2rem;">{{ num }}</h1>
-    <h1 id="replaceMe" style="font-size: 2rem;">I will be replaced with num through document.querySelector</h1>
+    <h1>{{ num }}</h1>
+    <h1 id="replaceMe">I will be replaced with num through document.querySelector</h1>
   </div>
 </template>
 
