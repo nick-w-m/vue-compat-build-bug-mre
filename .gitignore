@@ -2,15 +2,6 @@
 node_modules/**/*
 /dist
 
-
-/tests/e2e/videos/
-/tests/e2e/screenshots/
-
-# local configuration files
-.env
-.env.local
-.env.*.local
-
 # Log files
 /logs/*
 npm-debug.log*
@@ -25,14 +16,6 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
-
-#Electron-builder/snap output
-/dist_electron
-/parts
-/stage
-/prime
-*.snap
-
 
 # Track these files, if they exists
 !.gitignore
