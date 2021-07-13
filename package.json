@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "mre": "yarn run build && npx serve ./dist",
     "lint": "vue-cli-service lint"
   },
   "main": "background.js",
