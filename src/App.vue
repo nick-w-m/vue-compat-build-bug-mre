@@ -1,6 +1,8 @@
 <template>
   <div>
+    <!-- Will not update properly after built with the compat layer -->
     <h1>{{ num }}</h1>
+    <!-- Works either way -->
     <h1 id="replaceMe">I will be replaced with num through document.querySelector</h1>
   </div>
 </template>
