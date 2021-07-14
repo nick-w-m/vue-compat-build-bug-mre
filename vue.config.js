@@ -9,22 +9,6 @@ module.exports = {
   chainWebpack: (config) => {
     config.resolve.alias.set('vue', '@vue/compat');
 
-    config.module
-      .rule('vue')
-      .use('vue-loader')
-      .tap((options) => ({
-        ...options,
-        compilerOptions: {
-          compatConfig: {
-            MODE: 3,
-            GLOBAL_EXTEND: true,
-            INSTANCE_CHILDREN: true,
-            INSTANCE_EVENT_EMITTER: true,
-            INSTANCE_LISTENERS: true
-          }
-        }
-      }));
-
     config
       .plugin('fork-ts-checker')
       .tap((args) => {
